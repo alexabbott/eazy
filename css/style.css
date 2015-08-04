@@ -1,0 +1,630 @@
+/*@font-face {font-family: "Avenir Next"; src: url(../AvenirNext.ttc) format(“truetype”); }*/
+
+html, body {
+	padding: 0;
+	margin: 0;
+	font-family: "Avenir", Helvetica, Arial, sans-serif;
+	background: #000;
+}
+.row {
+	width: 100%;
+	max-width: 90%;
+}
+
+/*home page*/
+.header {
+	width: 100%;
+	position: relative;
+}
+.header-image {
+	width: 100vw;
+}
+.header-text {
+	text-align: center;
+	font-size: 6.8em;
+	color: #ffffff;
+	position: absolute;
+	width: 100%;
+	margin: 0 auto;
+	top: 30.5%;
+	letter-spacing: 0.2em;
+	transition: all 0.2s;
+}
+.tippy-top {
+	position: absolute;
+	top: 0;
+}
+.nav {
+	position: absolute;
+	width: 100%;
+	top: 59%;
+	margin: 0 auto;
+	text-align: center;
+}
+.nav ul {
+	margin-left: 0;
+}
+.nav ul, .nav li {
+	display: inline-block;
+}
+.nav ul li a {
+	text-align: center;
+	font-size: 10px;
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin: 0 12px;
+	letter-spacing: 4px;
+}
+.down-arrow {
+	text-align: center;
+	width: 40px;
+	position: absolute;
+	bottom: 18%;
+	left: 50%;
+	margin-left: -20px;
+}
+.video {
+	width: 100%;
+	height:682px; 
+	/*overflow: hidden; */
+	margin:0 auto;
+} 
+i.video-play {
+	font-size: 88px;
+	width: 100%;
+	height: 86%;
+	color: #fff;
+	position: absolute;
+	left: 50%;
+	top: 740px;
+	padding-top: 380px;
+	cursor: pointer;
+	margin-left: -50%;
+	text-align: center;
+	z-index: 2;
+}
+.video .vimeo {
+	margin-top:-132px;
+	transition: all 0.2s;
+	cursor: pointer;
+}
+.vimeo {
+	width: 100%;
+	height: 830px;
+	display:block;
+	margin:0 auto;
+}
+.audio {
+	width: 100%;
+	height: 400px;
+	background: #eeeeee;
+	z-index: 1;
+	position: relative;
+}
+.album-art {
+	width: 40%;
+	float: left;
+	display: inline-block;
+}
+.main-album-image {
+	width: 100%;
+}
+.album-quote {
+	width: 60%;
+	height: 80%;
+	float: right;
+	background: #000;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	padding-top: 8%;
+}
+.listen {
+	font-size: 18px;
+	letter-spacing: 4px;
+	display: block;
+}
+.album-title {
+	font-size: 36px;
+	letter-spacing: 5px;
+	display: block;
+	font-weight: bold;
+}
+.album-title-link {
+	text-decoration: none;
+	color: #fff;
+}
+.album-title-link:hover {
+	color: #fff;
+}
+.player {
+	width: 60%;
+	height: 20%;
+	float: right;
+	background: #eeeeee;
+	position: relative;
+}
+.cover-soundcloud {
+	display: none;
+}
+i.playpause, i.fa-backward, i.fa-forward {
+	color: #000;
+	cursor: pointer;
+}
+.song-title {
+	position: absolute;
+	top: 90px;
+	left: 60px;
+}
+.player-buttons {
+	position: absolute;
+	top: 130px;
+	left: 45px;
+}
+.player-progress {
+	position: absolute;
+	top: 10px;
+	left: 120px;
+	height: 5px;
+	width: 600px;
+	background: #000;
+	background-image: url('http://hdwaley.com/images/db_img8/white-background-hd-background-wallpaper-24.gif');
+	background-position: 0%;
+	background-repeat: no-repeat;
+	background-size: 0%;
+}
+.soundcloud {
+	width: 100%;
+	padding-top: 50px;
+	visibility: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.tour {
+	width: 100%;
+	position: relative;
+	height: 580px;
+	overflow: hidden;
+}
+.tour-image {
+	margin-top: -200px;
+}
+.ticket-link, .ticket-link:hover {
+	color: #ffffff;
+	text-decoration: none;
+}
+.tour-text {
+	text-align: center;
+	font-size: 34px;
+	color: #ffffff;
+	position: absolute;
+	width: 100%;
+	margin: 0 auto;
+	top: 18%;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.tour-dates {
+	text-align: center;
+	font-size: 13px;
+	letter-spacing: 5px;
+	color: #ffffff;
+	position: absolute;
+	width: 100%;
+	margin: 0 auto;
+	top: 35%;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.date {
+	text-align: left;
+}
+.venue {
+	text-align: right;
+}
+.tour-dates .row {
+	margin: 20px auto;
+}
+.tour-dates .row div {
+	display: inline-block;
+}
+.back-to-top a {
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+	position: absolute;
+	bottom: 20px;
+	font-size: 12px;
+	letter-spacing: 4px;
+	width: 100%;
+	text-transform: uppercase;
+}
+.footer {
+	background: #000;
+	width: 100%;
+	height: 80px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+.copyright {
+	color: #ffffff;
+	letter-spacing: 5px;
+	font-size: 10px;
+	font-weight: bold;
+	text-align: left;
+	padding: 35px 0 0 30px;
+	display: inline-block;
+	height: 40px;
+	margin-bottom: 0;
+}
+.socials {
+	text-align: right;
+	display: inline-block;
+	height: 38px;
+	margin-bottom: 0;
+	width: 300px;
+	float: right;
+	position: absolute;
+	top: 30px;
+	right: 30px;
+}
+.socials ul, .socials ul li {
+	display: inline-block;
+}
+.fa {
+	color: #fff;
+	padding: 0 0 0 15px;
+}
+
+/*music page*/
+.other-header {
+	background: rgba(0,0,0,0.7);
+	width: 100%;
+	height: 80px;
+	position: fixed;
+	top: 0;
+	z-index: 2;
+}
+.other-header ul, .other-header ul li {
+	display: inline-block;
+}
+.other-header ul {
+	position: fixed;
+	width: 600px;
+	top: 30px;
+	left: 50%;
+	margin-left: -300px;
+}
+.other-header ul li a {
+	color: #fff;
+	padding: 10px 10px 0 10px;
+	font-size: 14px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.eazy-logo {
+	position: fixed;
+	color: #fff;
+	top: 14px;
+	right: 30px;
+	font-size: 2.2em;
+	letter-spacing: 0.5em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.music-section {
+	padding-top: 100px;
+	background: #000;
+}
+.music-section .row {
+	max-width: 90%;
+}
+.album-item {
+	display: inline-block;
+	width: 33.1%;
+	height: 408px;
+	margin-bottom: 20px;
+}
+.first-row .album-item:nth-of-type(1) {
+	background: url('../img/album1.jpg');
+	background-size: 95% 99.5%;
+	background-repeat: no-repeat;
+}
+.first-row .album-item:nth-of-type(2) {
+	background: url('../img/album2.jpg');
+	background-size: 95% 99.5%;
+	background-repeat: no-repeat;
+}
+.first-row .album-item:nth-of-type(3) {
+	background: url('../img/album3.jpg');
+	background-size: 95% 99.5%;
+	background-repeat: no-repeat;
+}
+.second-row .album-item:nth-of-type(1) {
+	background: url('../img/album4.jpg');
+	background-size: 95% 99.5%;
+	background-repeat: no-repeat;
+}
+.second-row .album-item:nth-of-type(2) {
+	background: url('../img/album5.jpg');
+	background-size: 95% 99.5%;
+	background-repeat: no-repeat;
+}
+.soundcloud-album {
+	width: 95%;
+	height: 100%;
+	opacity: 0;
+	transition: all 0.2s;
+}
+.soundcloud-album:hover {
+	opacity: 1;
+}
+
+/*video page*/
+.video-section {
+	padding-top: 100px;
+	background: #000;
+}
+.video-section .row {
+    max-width: 90%;
+    margin-top: -121px;
+    padding-top: 239px;
+}
+.video-section .row div {
+	display: inline-block;
+}
+.vimeo-container {
+	height: 381px;
+	overflow: hidden;
+}
+.vimeo-player {
+	width: 100%;
+	height: 627px;
+	display: inline-block;
+}
+.vimeo-container, .vimeo-player {
+	margin-top: -127px;
+}
+
+.mobile-header, .mobile-menu {
+	display: none;
+}
+
+/*media queries, yay! */
+@media only screen and (min-width : 1000px) {
+	.video {
+		height: 940px;
+	}
+	.vimeo {
+		height: 1070px;
+	}
+}
+@media only screen and (min-width : 1100px) {
+	.header-text {
+		top: 33%;
+		font-size: 7.8em;
+	}
+}
+@media only screen and (max-width: 768px) {
+	html, body {
+		overflow-x: hidden;
+		height: 100%;
+	}
+	.home-page {
+		height: 1887px;
+	}
+	.music-page {
+		height: 1900px;
+	}
+	.video-page {
+		height: 1200px;
+	}
+	.nav, .other-header, .down-arrow {
+		display: none;
+	}
+	.header {
+		margin-top: 50px;
+		height: 300px;
+	}
+	.header-text {
+		font-size: 3.5em;
+		top: 43%;
+	}
+	.mobile-header {
+		display: block;
+		position: fixed;
+		background: #000;
+		top: 0;
+		width: 100%;
+		height: 50px;
+		z-index: 2;
+	}
+	i.fa-bars {
+		color: #fff;
+		cursor: pointer;
+		font-size: 22px;
+		margin-top: 15px;
+	}
+	.header-logo {
+		width: 50px;
+		position: fixed;
+		top: 10px;
+		left: 50%;
+		margin-left: -25px;
+	}
+	.mobile-menu {
+		position: fixed;
+		top: 0;
+		background: #000;
+		width: 100%;
+		height: 100%;
+		z-index: 3;
+	}
+	.mobile-menu ul {
+		margin-top: 65px;
+	}
+	.mobile-menu ul, .mobile-menu ul li {
+		text-align: center;
+		list-style: none;
+		color: #fff;
+		font-size: 28px;
+		line-height: 60px;
+		font-weight: bold;
+		width: 100%;
+	}
+	.mobile-menu ul li a, .mobile-menu ul li a:hover {
+		color: #fff;
+		text-decoration: none;
+		text-transform: uppercase;
+		letter-spacing: 12px;
+	}
+	i.fa-times {
+		color: #fff;
+		cursor: pointer;
+		font-size: 22px;
+		position: absolute;
+		top: 10px;
+		right: 20px;
+	}
+	.video {
+		height: 342px;
+	}
+	.vimeo {
+		height: 472px;
+		width: 90%;
+	}
+	i.video-play {
+		display: none;
+		top: 50px;
+		font-size: 58px;
+	}
+	.album-art {
+		width: 100%;
+	}
+	.album-quote {
+		width: 100%;
+		height: 190px;
+	}
+	.listen {
+		font-size: 14px;
+		padding-top: 20px;
+	}
+	.album-title {
+		font-size: 24px;
+	}
+	.player {
+		width: 100%;
+		height: 130px;
+	}
+	.cover-soundcloud {
+		position: absolute;
+		display: block;
+	    top: 10px;
+	    right: 0;
+	    width: 130px;
+	    background: #f5f5f5;
+	    height: 50px;
+	    z-index: 2;
+	}
+	.soundcloud {
+		visibility: visible;
+		padding: 0;
+		z-index: 1;
+	}
+	.song-title {
+		top: 30px;
+		left: 30px;
+	}
+	.player-buttons {
+		top: 70px;
+		left: 15px;
+	}
+	.player-progress {
+		width: 160px;
+	}
+	.tour-dates {
+		letter-spacing: 2px;
+	}
+	.footer {
+		height: 140px;
+	}
+	.copyright {
+		position: absolute;
+		width: 100%;
+		text-align: center;
+		padding: 0;
+		bottom: 20px;
+	}
+	.socials {
+		position: absolute;
+		width: 100%;
+		text-align: center;
+		padding: 0;
+		right: auto;
+	}
+	.city {
+		text-align: right;
+	}
+	.menu-footer {
+		position: fixed;
+		bottom: 0;
+		height: 120px;
+	}
+	.menu-copyright {
+		bottom: 0px;
+	}
+
+	/*video*/
+	.video-section {
+		padding-top: 20px;
+	}
+	.vimeo-player {
+		height: 566px;
+	}
+	.video-row2 {
+		margin-top: -300px !important;
+	}
+	.video-page .footer {
+		margin-top: -80px;
+	}
+
+	/*music*/
+	.album-item {
+		width: 100%;
+		background-size: 100% 100% !important;
+	}
+	.soundcloud-album {
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+	.video {
+		height: 465px;
+	}
+	.vimeo {
+		height: 600px;
+	}
+	.soundcloud {
+		width: 122%;
+	}
+	.music-page {
+		height: 3000px;
+	}
+	.album-item {
+		height: 800px;
+	}
+}
+@media only screen and (width: 768px) {
+	.header {
+		height: 400px;
+	}
+	.video {
+		height: 520px;
+	}
+	.vimeo {
+		height: 660px;
+	}
+}
